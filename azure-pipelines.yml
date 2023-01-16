@@ -1,0 +1,17 @@
+# File: azure-pipelines.yml
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: Install
+  jobs: 
+  - job: npminstall
+    steps:
+    - task: Npm@1
+      inputs:
+        command: 'install'
+- template: templates/stages1.yml
+- template: templates/stages2.yml
