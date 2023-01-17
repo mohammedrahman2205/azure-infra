@@ -1,5 +1,5 @@
 # terraform-azurerm-vm #
-[![Build Status](https://travis-ci.org/Azure/terraform-azurerm-vm.svg?branch=master)](https://travis-ci.org/Azure/terraform-azurerm-vm)
+
 
 Deploys 1+ Virtual Machines to your provided VNet
 =================================================
